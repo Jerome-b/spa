@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/prop-types": "off", // disable prop type validation
+    "react/react-in-jsx-scope": "off", // disable component to be in jsx scope
+    "semi": ["error", "never"], // disable trailing semicolon
+    "no-duplicate-imports": ["error"], // disable duplicate imports
+    "no-console": ["warn"], // warning for console log
+    "no-else-return": ["error"], // disable unnecessary else return statement
+    "no-unused-vars": ["warn"], // warn for unused variables
+    "no-trailing-spaces": ["warn"], // warn for trailing spaces
+    "max-len": ["error", 180, 2, { // configure maximum line length
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }]
+  }
+}

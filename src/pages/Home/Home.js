@@ -1,8 +1,7 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.scss'
+import logo from '../../logo.svg'
 
-function App() {
+const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
