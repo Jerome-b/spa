@@ -1,0 +1,60 @@
+@use '../../App.scss' as appStyle;
+
+.container {
+  margin-top: 240px;
+  padding-left: 100px;
+  padding-right: 16px;
+  .imageContainer {
+    /// offset-x | offset-y | color ///
+    box-shadow: -90px -83px appStyle.$color-d8d8d8;
+    .pyramidImage {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .valuesTitle {
+    text-align: center;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.25;
+    font-family: appStyle.$font-eczar;
+    // position title to be centered with the pyramid image
+    transform: translateY(-85px) translateX(-50px);
+    color: white;
+    opacity: 0.5;
+    text-shadow: 1.5px 0 0 black, 0 -1.5px 0 black, 0 1.5px 0 black, -1.5px 0 0 black;
+  }
+  .descriptionContainer {
+    display: flex;
+    justify-content: center;
+    .description {
+      flex: 0.65;
+      font-size: 35px;
+      line-height: 1.49;
+      font-weight: 600;
+      text-align: center;
+      color: appStyle.$color-1e252c;
+      font-family: appStyle.$font-poppins;
+    }
+  }
+}
+
+.descriptionContentContainer {
+  display: flex;
+  gap: 40px;
+  margin-top: 92px;
+  .valuesLeftColumn {
+    flex: 0.5;
+    font-family: appStyle.$font-robotoMono;
+    font-size: 28px;
+    line-height: 1.6;
+    color: appStyle.$color-4a4a4a;
+  }
+  .valuesRightColumn {
+    flex: 0.5;
+    font-family: appStyle.$font-robotoMono;
+    font-size: 28px;
+    line-height: 1.6;
+    color: appStyle.$color-4a4a4a;
+  }
+}

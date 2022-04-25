@@ -1,0 +1,73 @@
+@use '../../App.scss' as appStyle;
+
+.container {
+  margin-top: 250px;
+  .aboutTitle {
+    font-family: appStyle.$font-eczar;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.78;
+    transform: translateY(100px);
+    color: white;
+    opacity: 0.5;
+    word-break: break-all;
+    /// text-shadow: h-shadow v-shadow blur-radius color ///
+    text-shadow: 1.5px 0 0 black, 0 -1.5px 0 black, 0 1.5px 0 black, -1.5px 0 0 black;
+    @media (max-width: 680px) {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    @media (max-width: 400px) {
+      line-height: 1.1;
+    }
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .visionTitle {
+    text-shadow: 1px 0 0 appStyle.$color-1e252c, 0 -1px 0 appStyle.$color-1e252c, 0 1px 0 appStyle.$color-1e252c, -1px 0 0 appStyle.$color-1e252c;
+    color: white;
+    line-height: 1.25;
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    font-family: appStyle.$font-eczar;
+    .visionTitleChild {
+      transform: rotate(90deg) translateX(115px) translateY(-40px);
+    }
+  }
+}
+
+.visionParagraphContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .visionDescriptionContainer {
+    .visionDescription {
+      font-size: 35px;
+      line-height: 1.49;
+      color: appStyle.$color-1e252c;
+      font-weight: 600;
+      font-family: appStyle.$font-poppins;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0.38;
+    }
+  }
+}
+.visionContentContainer {
+  margin-top: 60px;
+  .visionContent {
+    font-size: 20px;
+    font-family: appStyle.$font-robotoMono;
+    line-height: 1.6;
+    color: appStyle.$color-4a4a4a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 0.70;
+    padding-left: 100px;
+  }
+}

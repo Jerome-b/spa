@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  .leftList {
+    @media (max-width: 480px) {
+      visibility: hidden;
+    }
+  }
+  .rightContainer {
+    flex: 1;
+    .rightList {
+      display: flex;
+      float: right;
+      gap: 17.5px;
+    }
+  }
+}
+
