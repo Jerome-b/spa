@@ -26,6 +26,7 @@ const ValuesDescription = () => {
 const ValuesContent = () => {
   return (
     <>
+      {/* Left column of content flex */}
       <div className={styles.valuesLeftColumn}>
         Army had half a day. Bad news. Andy Griffith turned us down. He didn't
         like his trailer. That's why you always leave a note! Army had half a
@@ -33,6 +34,7 @@ const ValuesContent = () => {
         That's why you always leave a note! No… but I'd like to be asked! Oh,
         you're gonna be in a coma, all right.
       </div>
+      {/* Right column of content flex */}
       <div className={styles.valuesRightColumn}>
         Army had half a day. Bad news. Andy Griffith turned us down. He didn't
         like his trailer. That's why you always leave a note! Army had half a
@@ -48,9 +50,10 @@ const Values = () => {
       <div className={styles.container}>
         <ValuesImage />
         <div className={styles.valuesTitle}>Our values</div>
-        <div className={styles.descriptionContainer}>
-          <ValuesDescription />
-        </div>
+      </div>
+      {/* Putting description outside the parent container to avoid the global padding */}
+      <div className={styles.descriptionContainer}>
+        <ValuesDescription />
       </div>
       {/* Putting content outside the parent container to avoid the global padding */}
       <div className={styles.descriptionContentContainer}>

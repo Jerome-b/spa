@@ -2,6 +2,9 @@
 
 .container {
   margin-top: 250px;
+  @media (max-width: 800px) {
+    margin-top: 49px;
+  }
   .aboutTitle {
     font-family: appStyle.$font-eczar;
     font-size: 120px;
@@ -31,11 +34,22 @@
     color: white;
     line-height: 1.25;
     font-size: 120px;
+    font-weight: 600;
     position: absolute;
     right: 0;
     font-family: appStyle.$font-eczar;
+    @media (max-width: 800px) {
+      line-height: 1.77;
+      font-size: 73px;
+      position: initial;
+      flex: 1;
+      min-width: 354px;
+    }
     .visionTitleChild {
       transform: rotate(90deg) translateX(115px) translateY(-40px);
+      @media (max-width: 800px) {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+      }
     }
   }
 }
@@ -54,11 +68,20 @@
       display: flex;
       flex-wrap: wrap;
       flex: 0.38;
+      @media (max-width: 800px) {
+        font-size: 24px;
+        line-height: 1.46;
+        letter-spacing: 0.46px;
+        flex: 1
+      }
     }
   }
 }
 .visionContentContainer {
   margin-top: 60px;
+  @media (max-width: 800px) {
+    margin-top: 24px;
+  }
   .visionContent {
     font-size: 20px;
     font-family: appStyle.$font-robotoMono;
@@ -69,5 +92,12 @@
     align-items: center;
     flex: 0.70;
     padding-left: 100px;
+    @media (max-width: 800px) {
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.46px;
+      flex: 1;
+      padding-left: 0px
+    }
   }
 }

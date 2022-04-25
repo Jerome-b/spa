@@ -1,6 +1,7 @@
 .container {
     padding: 28px 120px 134px 130px;
+    // breakpoint for small screen sizes and adjust styles
     @media (max-width: 680px) {
-        padding: 23px 23px 0px 30px;
+        padding: 23px 23px 106px 30px;
       }
 }

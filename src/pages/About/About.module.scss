@@ -13,7 +13,7 @@
     word-break: break-all;
     /// text-shadow: h-shadow v-shadow blur-radius color ///
     text-shadow: 1.5px 0 0 black, 0 -1.5px 0 black, 0 1.5px 0 black, -1.5px 0 0 black;
-    @media (max-width: 680px) {
+    @media (max-width: 800px) {
       transform: translateY(0);
       opacity: 1;
     }
