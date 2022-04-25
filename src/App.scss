@@ -1,6 +1,21 @@
-.App {
-  text-align: center;
-}
+// import custom fonts
+@import './assets/fonts/Poppins/fonts.scss';
+@import './assets/fonts/RobotoMono/fonts.scss';
+@import './assets/fonts/Eczar/fonts.scss';
+
+// global variables
+$font-poppins: 'Poppins';
+$font-eczar: 'Eczar';
+$font-robotoMono: 'RobotoMono';
+
+// global color
+$color-4a4a4a: #4a4a4a;
+$color-1e252c: #1e252c;
+$color-d8d8d8: #d8d8d8;
+
+// .App {
+//   text-align: center;
+// }
 
 .App-logo {
   height: 40vmin;
