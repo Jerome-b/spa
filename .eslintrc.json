@@ -6,7 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "standard"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -15,9 +16,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "rules": {
     "react/prop-types": "off", // disable prop type validation
     "react/react-in-jsx-scope": "off", // disable component to be in jsx scope
